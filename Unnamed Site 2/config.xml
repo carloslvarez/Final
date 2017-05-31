@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.jcar"
+    version   = "1.0.0">
+
+<name>Catalogo de Servicios</name>
+
+<description>
+Aplicacion que funciona como agenda electrónica.
+</description>
+
+<author href="https://example.com" email="you@example.com">
+Carlos Alvarez
+</author>
+
+<icon src="/notebook.png" gap:density="ldpi" gap:platform="android" />
+<icon src="/notebook.png" gap:density="mdpi" gap:platform="android" />
+<icon src="/notebook.png" gap:density="hdpi" gap:platform="android" />
+<icon src="/notebook.png" gap:density="xhdpi" gap:platform="android" />
+
+</widget>
