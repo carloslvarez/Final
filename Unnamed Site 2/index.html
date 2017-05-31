@@ -1,0 +1,196 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Catalogo PhoneGap</title>
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body>
+
+<div data-role="page" id="home">
+<div data-role="header" id="homeheader">
+    <h1>Catálogo de Servicios</h1>
+    <center><h2><a href="#agregar" data-role="button" data-icon="plus">Agregar Servicios</a><a href="#acerca" data-role="button" data-icon="info">Acerca de mi</a></h2></center>
+  </div>
+  <div align="center"><br><img src="/notebook.png" height="30%" width="50%" alt="tu imagen"></div>
+  <div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible">
+        <h3>Restaurantes</h3>
+        <ul data-role="listview" data-filter="true" data-inset="true" data-split-icon="edit" >
+      </div>
+      <div data-role="collapsible">
+        <h3>Mantenimiento</h3>
+        <ul data-role="listview" data-filter="true" data-inset="true" data-split-icon="edit" >
+      </div>
+      <div data-role="collapsible">
+        <h3>Otros</h3>
+        <ul data-role="listview" data-filter="true" data-inset="true" data-split-icon="edit" >
+      </div>
+    </div>
+  </div>
+<div data-role="footer" data-position="fixed">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Atrás</a></li>
+      <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+      <li><a href="#agregar" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    </ul>
+    </div>
+    
+  </div>
+</div>
+
+<!--Inicia Acerca de mi-->
+<div data-role="page" id="acerca">
+  <div data-role="header">
+    <h1>Acerca de mi</h1>
+  </div>
+  <div data-role="content">
+  <center><div>
+  <img src="/Carlos.jpg" width="50%" height="30%" alt="tu imagen">
+  </div></center>
+  <br>
+  Datos personales:<br><br>
+  - José Carlos Álvarez Ramírez<br>
+  - Lic. en Ingeniería en Sistemas de Información<br>
+  - Desarrollo de Aplicaciones para Comercio Electrónico<br>
+  </div>
+  <div data-role="footer" data-position="fixed">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Atrás</a></li>
+      <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+      <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+      <li><a href="#home" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    </ul>
+    </div>
+    
+  </div>
+</div> 
+<!--Finaliza Acerca de mi-->
+
+<!--Inicia Info-->
+<div data-role="page" id="info">
+  <div data-role="header">
+    <h1>Más información</h1>
+  </div>
+  <div data-role="content"> - Aplicación desarrollada mediante PhoneGap para Proyecto
+    Final.<br>
+  - Por Carlos Álvarez - Mayo 2017. <a href="#" data-role="button" data-icon="delete" data-rel="back">Cerrar</a> </div>
+</div>
+<!--Finaliza Info-->
+
+<!--Inicia Agregar-->
+<div data-role="page" id="agregar">
+<div data-role="header">
+    <h1>Alta de Servicios</h1>
+  </div>
+<div data-role="content">
+  <center><div>
+  <img src="/icon.png" width="50%" height="30%" alt="tu imagen">
+  </div></center>
+  <div data-role="fieldcontain">
+  <input type="text" name="id_serv" id="id_serv" value="" placeholder="ID del Servicio" />
+             <input type="text" name="nombre_serv" id="nombre_serv" value="" placeholder="Nombre del Servicio" />
+             <input type="text" name="tel_serv" id="tel_serv" value="" placeholder="Teléfono" />
+             <input type="text" name="mail_serv" id="mail_serv" value="" placeholder="E-Mail" />
+             <input type="text" name="dom_serv" id="dom_serv" value="" placeholder="Domicilio" />
+             <input type="text" name="nota_serv" id="nota_serv" value="" placeholder="Nota" />
+           </div>
+  <div id="categoryBox">
+               <div data-role="fieldcontain">
+                 <fieldset data-role="controlgroup" data-type="horizontal">
+                   <input type="radio" name="categoriaSel" id="cat_resta" value="restaurant" />
+                   <label for="cat_resta">Restaurant</label>
+                   <input type="radio" name="categoriaSel" id="cat_mant" value="mantenimiento" />
+                   <label for="cat_mant">Mantenimiento</label>
+                   <input type="radio" name="categoriaSel" id="cat_otro" value="otro" />
+                   <label for="cat_otro">Otro</label>
+                 </fieldset>
+               </div>
+               <a href="#" data-role="button" data-icon="plus">Guardar</a><a href="#" data-role="button" data-icon="delete">Cancelar</a>
+  </div>
+  <div data-role="footer" data-position="fixed">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Atrás</a></li>
+      <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+      <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+      <li><a href="#infoserv" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    </ul>
+    </div>
+    
+  </div>
+</div>
+<!--Finaliza Agregar-->
+
+<!--Inicia Info Servicio-->
+<div data-role="page" id="infoserv">
+  <div data-role="header">
+    <h1>Información de Servicio</h1>
+  </div>
+  <div data-role="content">Content</div>
+  <div data-role="footer" data-position="fixed">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Atrás</a></li>
+      <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+      <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+      <li><a href="#modificar" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    </ul>
+    </div>
+    
+  </div>
+</div>
+<!--Finaliza Info Servicio-->
+
+<!--Inicia Modificar-->
+<div data-role="page" id="modificar">
+  <div data-role="header">
+    <h1>Header</h1>
+  </div>
+  <div data-role="content">
+  <center><div>
+  <img src="/icon.png" width="150" height="150" alt="tu imagen">
+  </div></center>
+  <div data-role="fieldcontain">
+  <input type="text" name="id_serv" id="id_serv" value="" placeholder="ID del Servicio" />
+             <input type="text" name="nombre_serv" id="nombre_serv" value="" placeholder="Nombre del Servicio" />
+             <input type="text" name="tel_serv" id="tel_serv" value="" placeholder="Teléfono" />
+             <input type="text" name="mail_serv" id="mail_serv" value="" placeholder="E-Mail" />
+             <input type="text" name="dom_serv" id="dom_serv" value="" placeholder="Domicilio" />
+             <input type="text" name="nota_serv" id="nota_serv" value="" placeholder="Nota" />
+           </div>
+  <div id="categoryBox">
+               <div data-role="fieldcontain">
+                 <fieldset data-role="controlgroup" data-type="horizontal">
+                   <input type="radio" name="categoriaSel" id="cat_resta" value="restaurant" />
+                   <label for="cat_resta">Restaurant</label>
+                   <input type="radio" name="categoriaSel" id="cat_mant" value="mantenimiento" />
+                   <label for="cat_mant">Mantenimiento</label>
+                   <input type="radio" name="categoriaSel" id="cat_otro" value="otro" />
+                   <label for="cat_otro">Otro</label>
+                 </fieldset>
+               </div>
+               <a href="#" data-role="button" data-icon="plus">Guardar</a><a href="#" data-role="button" data-icon="minus">Borrar</a><a href="#" data-role="button" data-icon="delete">Cancelar</a>
+</div>
+  <div data-role="footer" data-position="fixed">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Atrás</a></li>
+      <li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+      <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+      <li><a href="#home" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    </ul>
+    </div>
+    
+  </div>
+
+</div>
+<!--Finaliza Modificar-->
+
+</body>
+</html>
